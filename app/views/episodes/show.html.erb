@@ -1,0 +1,8 @@
+<h1>Here's more information about episode #<%= @episode.number %>!</h1>
+<br>
+<h4>This episode had the following guests: </h4>
+<% @episode.guests.each do |guest| %>
+<ul>
+  <li><%= guest.name %></li>
+</ul>
+<% end %>
